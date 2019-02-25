@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Akshyar:Nepali character  recognition</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="static/style.css">
+
+  
+</head>
+
+<body omload="init()">
+
+  <div class="container-fluid wrapper">
+  <div class="container">
+    
+    <h1 class="center">NEPALI CHARACTER RECOGNITION</h1>
+
+          <p class="card-text">Draw the character</p>
+          <canvas id="sketchpad" width="250" height="250"></canvas>
+        </div>
+      </div>
+                <div class="row">
+                    <input type="submit" value="Clear Sketchpad" onclick="clearCanvas(canvas,ctx);">
+                    <form method="post" action="/" onsubmit="prepareImg();">
+                      <input id="inp_img" name="img" type="hidden" value="">
+                      <input id="bt_upload" type="submit" value="Upload">
+                    </form>
+                </div>
+
+                <div class="row" style='text-align: center'>
+		          <div class="col-lg-12 text-center">
+		            {% if prediction != ''%}
+		            <h5><i>I see:</i> </h5><h2>{{ prediction }}</h2>
+		            {% endif %}
+		          </div>
+		        </div>
+    <script  src="static/main.js"></script>
+
+
+
+
+</body>
+
+</html>

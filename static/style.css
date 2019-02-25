@@ -1,0 +1,19 @@
+.wrapper {
+  background-color: #eaeaea;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+
+
+#canvas1{
+  border: 1px solid green;
+}
+
