@@ -3,6 +3,20 @@ akshyar
 
 nepali character regnition project
 
+Description
+This is a pet project for the implementation of Convotional Nueral Networks in Nepali Character Dataset. The dataset used in this project is stored in data folder. The input raw dataset is extracted from internet sources. A CNN model is built initially in Jupyter notebook. This model is implemented on keras which uses tensorflow on its backend. The hyperparameter tuning for this model is done through random search method as shown in the notebook. The optimum model obtained is trained and the model is saved in out folder. This model is used to predict the characters drawn by the user in the web interface developed. 
+Installation guide
+1. Install required environments.
+The environments required are maintained under environment.yml file.
+Create a conda virtual environment through command
+conda env create -f environment.yml
+2. Train the model
+Run train.py
+python train.py
+3. Run the application
+Run app.py
+python app.py
+
 Project Organization
 ------------
 
@@ -54,4 +68,3 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
